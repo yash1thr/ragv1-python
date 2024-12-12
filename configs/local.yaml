@@ -1,0 +1,22 @@
+# Embeddings
+embedding-provider: openai
+embedding-model: text-embedding-3-small
+tokens-per-chunk: 500
+chunks-per-batch: 100
+# Vector store
+vector-store-provider: chroma
+pinecone-index-name: rag
+hybrid-retrieval: true
+index-name: yash
+
+# LLM
+llm-provider: ollama
+llm-model: llama3.1
+llm-retriever: false
+
+# Reranking
+reranking-provider: huggingface
+reranking-model: cross-encoder/ms-marco-MiniLM-L-6-v2
+
+repo_id: lumena-repos/lumena-cloud-skill
+index_repo: true
